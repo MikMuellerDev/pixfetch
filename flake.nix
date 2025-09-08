@@ -2,7 +2,7 @@
   description = "Pixfetch";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -14,7 +14,7 @@
       pname = "pixfetch";
       version = "1.0.0";
       src = ./.;
-      cargoSha256 = "sha256-hLOzxfSqjelOlrF2xHBIK9ae/lgA5GrEweJzlq7Dve4=";
+      cargoHash = "sha256-CA5j5In7pGMbKunKV+lMnCK3tQ5ibR4maf+XK3m15ss=";
     };
 
     defaultPackage.x86_64-linux = self.packages.x86_64-linux.pixfetch;
